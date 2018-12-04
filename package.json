@@ -4,7 +4,9 @@
   "description": "This repo contains my solutions to the advent of code problems. By running node path/to/file.js on any of these files they should run.",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,7 @@
     "url": "https://github.com/Sharper044/adventOfCode2018/issues"
   },
   "homepage": "https://github.com/Sharper044/adventOfCode2018#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "morgan": "^1.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",

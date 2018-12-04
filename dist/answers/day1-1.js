@@ -1,8 +1,17 @@
-import { input } from '../resources/day1-1-input';
+'use strict';
 
-export function solution1_1() {
-  const arr = input.split('\n');
-  const answer = arr.reduce((accumulator, currentValue) => parseInt(accumulator, 10) + parseInt(currentValue))
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.solution1_1 = solution1_1;
+
+var _day11Input = require('../resources/day1-1-input');
+
+function solution1_1() {
+  var arr = _day11Input.input.split('\n');
+  var answer = arr.reduce(function (accumulator, currentValue) {
+    return parseInt(accumulator, 10) + parseInt(currentValue);
+  });
   console.log("day 1.1 answer", answer);
 }
 
