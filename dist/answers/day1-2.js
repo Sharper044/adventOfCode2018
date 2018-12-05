@@ -5,12 +5,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.solution1_2 = solution1_2;
 
-var _day11Input = require('../resources/day1-1-input');
+var _day1input = require('../resources/day1input');
 
 function solution1_2() {
   var frequencies = [0];
   var current = 0;
-  var arr = _day11Input.input.split('\n');
+  var arr = _day1input.input.split('\n');
   for (var i = 0;; i++) {
     if (i === arr.length) {
       i = 0;

@@ -5,10 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.solution1_1 = solution1_1;
 
-var _day11Input = require('../resources/day1-1-input');
+var _day1input = require('../resources/day1input');
 
 function solution1_1() {
-  var arr = _day11Input.input.split('\n');
+  var arr = _day1input.input.split('\n');
   var answer = arr.reduce(function (accumulator, currentValue) {
     return parseInt(accumulator, 10) + parseInt(currentValue);
   });

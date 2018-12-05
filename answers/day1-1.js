@@ -1,4 +1,4 @@
-import { input } from '../resources/day1-1-input';
+import { input } from '../resources/day1input';
 
 export function solution1_1() {
   const arr = input.split('\n');
